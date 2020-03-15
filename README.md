@@ -1,5 +1,6 @@
 # ukemi
 
+[![Gem Version](https://badge.fury.io/rb/ukemi.svg)](https://badge.fury.io/rb/ukemi)
 [![Build Status](https://travis-ci.com/ninoseki/ukemi.svg?branch=master)](https://travis-ci.com/ninoseki/ukemi)
 [![Coverage Status](https://coveralls.io/repos/github/ninoseki/ukemi/badge.svg?branch=master)](https://coveralls.io/github/ninoseki/ukemi?branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/ninoseki/ukemi/badge)](https://www.codefactor.io/repository/github/ninoseki/ukemi)
@@ -15,7 +16,7 @@ It supports the following services.
 
 It outputs passive DNS resolutions as JSON.
 
-## Instalattion
+## Installation
 
 ```bash
 gem install ukemi
