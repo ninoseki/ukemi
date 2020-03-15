@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.virustotal.com/api/v3/domains/cunkt.club/resolutions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
+      X-Apikey:
+      - "<VIRUSTOTAL_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Cloud-Trace-Context:
+      - c6e972abaa31b7ff80ed9ce4b60b2e9d
+      Date:
+      - Sun, 15 Mar 2020 08:13:11 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '582'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "data": [
+                {
+                    "attributes": {
+                        "date": 1583988969,
+                        "host_name": "cunkt.club",
+                        "ip_address": "195.123.228.14",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "195.123.228.14cunkt.club",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/195.123.228.14cunkt.club"
+                    },
+                    "type": "resolution"
+                }
+            ],
+            "links": {
+                "self": "https://www.virustotal.com/api/v3/domains/cunkt.club/resolutions?limit=10"
+            }
+        }
+    http_version: null
+  recorded_at: Sun, 15 Mar 2020 08:13:11 GMT
+recorded_with: VCR 5.1.0

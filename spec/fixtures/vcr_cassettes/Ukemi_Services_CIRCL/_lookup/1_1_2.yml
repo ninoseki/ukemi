@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.circl.lu/pdns/query/circl.lu
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.circl.lu
+      Authorization:
+      - "<CIRCL_AUTH>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Mar 2020 08:46:39 GMT
+      Server:
+      - TornadoServer/3.2.dev2
+      Strict-Transport-Security:
+      - max-age=15768000
+      Content-Length:
+      - '1213'
+      Etag:
+      - '"c913e7b6527c5e4f1c1915866f1a5ba382ead51e"'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-Security-Policy:
+      - default-src 'self' circl.lu www.circl.lu www.gstatic.com;
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block;
+    body:
+      encoding: UTF-8
+      string: |
+        {"count": 227, "origin": "https://www.circl.lu/pdns/", "time_first": 1299530144, "rrtype": "A", "rrname": "circl.lu", "rdata": "149.13.33.4", "time_last": 1329124550}
+        {"count": 61616567, "origin": "https://www.circl.lu/pdns/", "time_first": 1475825158, "rrtype": "NS", "rrname": "circl.lu", "rdata": "ns4.eurodns.com", "time_last": 1540865989}
+        {"count": 62812441, "origin": "https://www.circl.lu/pdns/", "time_first": 1298398002, "rrtype": "NS", "rrname": "circl.lu", "rdata": "ns1.eurodns.com", "time_last": 1540865989}
+        {"count": 62812431, "origin": "https://www.circl.lu/pdns/", "time_first": 1298398002, "rrtype": "NS", "rrname": "circl.lu", "rdata": "ns2.eurodns.com", "time_last": 1540865989}
+        {"count": 2, "origin": "https://www.circl.lu/pdns/", "time_first": 1299079885, "rrtype": "A", "rrname": "circl.lu", "rdata": "194.154.205.24", "time_last": 1299079885}
+        {"count": 61616567, "origin": "https://www.circl.lu/pdns/", "time_first": 1475825158, "rrtype": "NS", "rrname": "circl.lu", "rdata": "ns3.eurodns.com", "time_last": 1540865989}
+        {"count": 30179, "origin": "https://www.circl.lu/pdns/", "time_first": 1475825169, "rrtype": "A", "rrname": "circl.lu", "rdata": "149.13.33.14", "time_last": 1540488114}
+    http_version: null
+  recorded_at: Sun, 15 Mar 2020 08:46:39 GMT
+recorded_with: VCR 5.1.0

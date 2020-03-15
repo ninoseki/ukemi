@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.passivetotal.org/v2/dns/passive?query=195.123.228.14&timeout=7
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.passivetotal.org
+      Authorization:
+      - "<PASSIVETOTAL_AUTH>"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Pragma:
+      - no-cache
+      Expires:
+      - '0'
+      X-Frame-Options:
+      - DENY
+      Vary:
+      - accept-encoding
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Sun, 15 Mar 2020 00:52:42 GMT
+      Server:
+      - passivetotal-api
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload;
+    body:
+      encoding: ASCII-8BIT
+      string: '{"pager":null,"queryValue":"195.123.228.14","queryType":"ip","firstSeen":"2018-07-20
+        02:21:13","lastSeen":"2020-03-15 01:14:54","totalRecords":32,"results":[{"firstSeen":"2019-06-18
+        05:47:45","lastSeen":"2019-09-11 01:19:48","source":["riskiq","virustotal","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"oldertool.xyz","resolveType":"domain","recordHash":"7f9eb2c24ed4e31b0f59ddcb29d3ee7042559f1bb685054689537993d64265bd"},{"firstSeen":"2019-06-18
+        05:01:41","lastSeen":"2019-09-11 01:49:52","source":["riskiq","virustotal","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"yourzone.xyz","resolveType":"domain","recordHash":"5d830878c926cbe86581c7e966182831828aaffa728e28cfb49461ac525cc3e6"},{"firstSeen":"2020-03-11
+        21:56:09","lastSeen":"2020-03-14 02:52:16","source":["riskiq","virustotal","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"cunkt.club","resolveType":"domain","recordHash":"5ed9f048d1376bf51b3f3f882a1e24bc650dc3201ff075e46c2317c754094cc3"},{"firstSeen":"2019-06-18
+        04:52:53","lastSeen":"2019-09-11 05:55:02","source":["riskiq","virustotal","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"planetsex.club","resolveType":"domain","recordHash":"e82d9ee00b605b0a1e953a6d5cf21124cf8ef16c4cc7a960352175874f4b9a68"},{"firstSeen":"2019-07-14
+        15:58:41","lastSeen":"2019-07-30 02:40:23","source":["riskiq","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"www.casualteen.club","resolveType":"domain","recordHash":"e7cc335937354f84bf3537d13339f84532e0f806c515e6c7f873c0ba17827449"},{"firstSeen":"2019-07-10
+        06:06:58","lastSeen":"2019-07-27 03:51:05","source":["riskiq","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"www.gojuicy.xyz","resolveType":"domain","recordHash":"dc007015280ffba3b95c968f2cd56a11a54cf07eb7c7d091cff25a8fb85cb412"},{"firstSeen":"2019-07-30
+        02:28:38","lastSeen":"2019-07-30 02:28:38","source":["riskiq"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"www.toptube.pw","resolveType":"domain","recordHash":"5b0c6e6b155be7f8d8457f576468a5fbb0f234022823903e0e8bcad119f6a2c4"},{"firstSeen":"2019-08-26
+        12:32:41","lastSeen":"2019-08-26 12:32:41","source":["riskiq"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"www.hotxxi.xyz","resolveType":"domain","recordHash":"3b9de14fb7e72994fccfd29e843a1f8e624cba4f3378c015fd0d95f0f9a1df80"},{"firstSeen":"2019-06-18
+        05:21:08","lastSeen":"2019-09-10 23:28:28","source":["riskiq","virustotal","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"vidis.xyz","resolveType":"domain","recordHash":"c703a9d220c96100e92e91a98f6b3c0313c39dc4025ed06eda0f2f4a281dac67"},{"firstSeen":"2019-10-08
+        12:01:32","lastSeen":"2020-03-15 01:14:54","source":["riskiq","virustotal","emerging_threats","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"windows-sys-update.com","resolveType":"domain","recordHash":"aefc2c9a2393c72d867b458ca5db1ac41fcc307c6b28e520f86502f9e9ac0e67"},{"firstSeen":"2019-06-18
+        04:45:03","lastSeen":"2019-09-11 01:54:18","source":["riskiq","virustotal","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"casualteen.club","resolveType":"domain","recordHash":"a5597b125172016197a7190a8e7475bb0c293a8592c669934befd15b64f7b688"},{"firstSeen":"2020-03-09
+        07:35:16","lastSeen":"2020-03-11 17:00:00","source":["riskiq","virustotal","emerging_threats"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"cenkt.club","resolveType":"domain","recordHash":"843db314a6b40042bf8703a1219e80c1f3e604daed6e5799e77187be6ff3a913"},{"firstSeen":"2019-06-26
+        03:36:34","lastSeen":"2019-07-30 02:23:28","source":["riskiq"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"www.luxteens.ru","resolveType":"domain","recordHash":"086fa5459925ac4ed6289f1039ce3e6cb1ad07d502f407edfa9c3c81925cec7f"},{"firstSeen":"2019-07-07
+        23:59:49","lastSeen":"2019-09-10 16:41:47","source":["riskiq"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"www.yourzone.xyz","resolveType":"domain","recordHash":"6424090ac37fb5862775eacdc7671789b796545ba88971c00bc1c36ac10c8a83"},{"firstSeen":"2019-06-26
+        04:12:02","lastSeen":"2019-08-29 11:02:20","source":["riskiq"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"www.planetsex.club","resolveType":"domain","recordHash":"d25e6682b1222df9ec7929b7d2ee3c546d3d685bb6b00cdcfde69c85b7ac32d6"},{"firstSeen":"2019-06-18
+        04:51:02","lastSeen":"2019-09-11 01:26:48","source":["riskiq","virustotal","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"teenteur.club","resolveType":"domain","recordHash":"cfa8c341c7cb38dc43090e80c070a4f977edfec2d62ddecd052dc1646d9cbbc0"},{"firstSeen":"2019-06-18
+        05:01:42","lastSeen":"2019-09-10 23:32:38","source":["riskiq","virustotal","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"luxteens.ru","resolveType":"domain","recordHash":"fc1b5697248fb81f4c893e6f8fbf140f5df25b0413ff51ef87c26a60ee235189"},{"firstSeen":"2019-06-18
+        04:42:57","lastSeen":"2019-09-11 01:21:02","source":["riskiq","virustotal","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"nice.joe.dj","resolveType":"domain","recordHash":"f100258eec9a66996069fbd5260d8fbbee802984e87123f9478acee85fa09870"},{"firstSeen":"2019-06-18
+        04:50:51","lastSeen":"2019-09-11 02:01:41","source":["riskiq","virustotal","emerging_threats","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"imgpile.icu","resolveType":"domain","recordHash":"ccb6f0ed8ddee3bf1cdda50a7509c1ce824be30b8e0f374344ec6536aa590131"},{"firstSeen":"2019-06-30
+        20:41:33","lastSeen":"2019-09-11 01:10:04","source":["riskiq","virustotal","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"proxyloop.club","resolveType":"domain","recordHash":"7e93e12ec626ad7ad315dd01e027c0ce9cf68b87d90ca1b521257dbf08ce9213"},{"firstSeen":"2019-06-25
+        12:23:01","lastSeen":"2019-09-09 13:42:08","source":["riskiq"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"www.18boobs.space","resolveType":"domain","recordHash":"a9b49f58ca1989dc60f0b918779617889e48ac6e1a3abeddb98fa58e73f69828"},{"firstSeen":"2019-06-18
+        04:50:13","lastSeen":"2019-09-11 02:20:25","source":["riskiq","virustotal","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"hotxxi.xyz","resolveType":"domain","recordHash":"9d17c722f370bbb29419fed11e5dcaace503276afc07e53841254a1024550b30"},{"firstSeen":"2019-06-18
+        05:01:42","lastSeen":"2019-09-11 01:48:22","source":["riskiq","virustotal","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"18boobs.space","resolveType":"domain","recordHash":"0db54ba8762d19b950b743a665cc332115ce8f8119bc0f1655444db3bc7ab1d5"},{"firstSeen":"2020-03-04
+        19:34:50","lastSeen":"2020-03-09 17:00:00","source":["riskiq","virustotal","emerging_threats"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"taokt.club","resolveType":"domain","recordHash":"82e5e24884fa2cc69883150be671828974118cb68bf0005dc0de713d9a03a8bc"},{"firstSeen":"2019-07-30
+        02:24:48","lastSeen":"2019-07-30 02:24:48","source":["riskiq"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"www.proxyloop.club","resolveType":"domain","recordHash":"655bd8f72e5df493a012dbbfd2060b15582b5f939f1aa3f0e12f25308fcbbb91"},{"firstSeen":"2018-07-20
+        02:21:13","lastSeen":"2018-08-25 14:58:22","source":["riskiq","virustotal"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"mybestead.com","resolveType":"domain","recordHash":"900b8891b18d805f49393ec29b0cf18398f02cb051a37c25fa8493205cdd5bd1"},{"firstSeen":"2019-06-18
+        04:43:29","lastSeen":"2019-09-11 01:40:20","source":["riskiq","virustotal","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"gojuicy.xyz","resolveType":"domain","recordHash":"2f8352d5b2905efe19511c923ccfa09bfb5f5f6160ff61fd9f0725fc0c6b20db"},{"firstSeen":"2020-03-04
+        01:10:08","lastSeen":"2020-03-04 05:31:52","source":["riskiq"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"nittsu-si.com","resolveType":"domain","recordHash":"5ee2542b415f47b44dec8373a210a3bc5d661103c6ccaf22ae88b64bedf9eb62"},{"firstSeen":"2019-07-08
+        12:11:07","lastSeen":"2019-09-10 05:06:06","source":["riskiq"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"www.vidis.xyz","resolveType":"domain","recordHash":"ad03806090af55e0e4587867ede86fc3c826561a8643fee42b6eeae165ef188c"},{"firstSeen":"2019-07-30
+        02:21:28","lastSeen":"2019-09-07 04:13:46","source":["riskiq"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"www.oldertool.xyz","resolveType":"domain","recordHash":"59769424c7573bf8bfbb32aed83000e780962c9c3a088db9fe2f7156a88bc286"},{"firstSeen":"2019-06-30
+        19:29:36","lastSeen":"2019-09-11 04:22:21","source":["riskiq","virustotal","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"teentape.icu","resolveType":"domain","recordHash":"72bce6bed1e6156854723b5dd25765e1d3f6b53a3583e705528f6e850ad2d309"},{"firstSeen":"2019-06-18
+        05:17:13","lastSeen":"2019-09-11 01:10:06","source":["riskiq","virustotal","kaspersky"],"value":"195.123.228.14","collected":"2020-03-15
+        00:52:42","recordType":"A","resolve":"toptube.pw","resolveType":"domain","recordHash":"145339d0a5fd366984b545c444e8b29df4972fffa642e8ec3f329a8713fe85fa"}]}'
+    http_version: null
+  recorded_at: Sun, 15 Mar 2020 00:52:43 GMT
+recorded_with: VCR 5.1.0
