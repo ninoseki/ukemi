@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.securitytrails.com/v1/domains/list
+    body:
+      encoding: UTF-8
+      string: '{"filter":{"ipv4":"195.123.228.14"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.securitytrails.com
+      Apikey:
+      - "<SECURITYTRAILS_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Mar 2020 00:01:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '505'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-Second:
+      - '2'
+      X-Ratelimit-Remaining-Second:
+      - '1'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - FfxRQUO9xCom2KIAZmaj
+      X-Kong-Upstream-Latency:
+      - '64'
+      X-Kong-Proxy-Latency:
+      - '34'
+      Via:
+      - kong/0.11.2
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "records": [
+            {
+              "whois": {
+                "registrar": null,
+                "expiresDate": null,
+                "createdDate": null
+              },
+              "mail_provider": [],
+              "hostname": "cunkt.club",
+              "host_provider": [
+                "ITL LLC"
+              ],
+              "computed": {
+                "company_name": null
+              },
+              "alexa_rank": null
+            }
+          ],
+          "record_count": 1,
+          "meta": {
+            "total_pages": 1,
+            "query": "ipv4 = '195.123.228.14'",
+            "page": 1,
+            "max_page": 1
+          },
+          "endpoint": "/v1/domains/list"
+        }
+    http_version: null
+  recorded_at: Sun, 15 Mar 2020 00:01:49 GMT
+recorded_with: VCR 5.1.0

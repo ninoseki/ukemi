@@ -1,0 +1,183 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.virustotal.com/api/v3/ip_addresses/195.123.228.14/resolutions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.virustotal.com
+      X-Apikey:
+      - "<VIRUSTOTAL_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Cloud-Trace-Context:
+      - e25b5cb1ff64af9e75f78d1a97e511e7
+      Date:
+      - Sat, 14 Mar 2020 23:56:58 GMT
+      Server:
+      - Google Frontend
+      Content-Length:
+      - '5085'
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "data": [
+                {
+                    "attributes": {
+                        "date": 1583988969,
+                        "host_name": "cunkt.club",
+                        "ip_address": "195.123.228.14",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "195.123.228.14cunkt.club",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/195.123.228.14cunkt.club"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1583790215,
+                        "host_name": "cenkt.club",
+                        "ip_address": "195.123.228.14",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "195.123.228.14cenkt.club",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/195.123.228.14cenkt.club"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1583379290,
+                        "host_name": "taokt.club",
+                        "ip_address": "195.123.228.14",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "195.123.228.14taokt.club",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/195.123.228.14taokt.club"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1576211452,
+                        "host_name": "windows-sys-update.com",
+                        "ip_address": "195.123.228.14",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "195.123.228.14windows-sys-update.com",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/195.123.228.14windows-sys-update.com"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1568102675,
+                        "host_name": "gojuicy.xyz",
+                        "ip_address": "195.123.228.14",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "195.123.228.14gojuicy.xyz",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/195.123.228.14gojuicy.xyz"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1568042160,
+                        "host_name": "nice.joe.dj",
+                        "ip_address": "195.123.228.14",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "195.123.228.14nice.joe.dj",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/195.123.228.14nice.joe.dj"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1567732360,
+                        "host_name": "hotxxi.xyz",
+                        "ip_address": "195.123.228.14",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "195.123.228.14hotxxi.xyz",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/195.123.228.14hotxxi.xyz"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1567732360,
+                        "host_name": "casualteen.club",
+                        "ip_address": "195.123.228.14",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "195.123.228.14casualteen.club",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/195.123.228.14casualteen.club"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1567732355,
+                        "host_name": "teenteur.club",
+                        "ip_address": "195.123.228.14",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "195.123.228.14teenteur.club",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/195.123.228.14teenteur.club"
+                    },
+                    "type": "resolution"
+                },
+                {
+                    "attributes": {
+                        "date": 1567732355,
+                        "host_name": "planetsex.club",
+                        "ip_address": "195.123.228.14",
+                        "resolver": "VirusTotal"
+                    },
+                    "id": "195.123.228.14planetsex.club",
+                    "links": {
+                        "self": "https://www.virustotal.com/api/v3/resolutions/195.123.228.14planetsex.club"
+                    },
+                    "type": "resolution"
+                }
+            ],
+            "links": {
+                "next": "https://www.virustotal.com/api/v3/ip_addresses/195.123.228.14/resolutions?cursor=CloKEQoEZGF0ZRIJCIW6qpGCu-QCEkFqEXN-dmlydXN0b3RhbGNsb3VkciwLEgpSZXNvbHV0aW9uIhwxOTUuMTIzLjIyOC4xNHBsYW5ldHNleC5jbHViDBgAIAE%3D&limit=10",
+                "self": "https://www.virustotal.com/api/v3/ip_addresses/195.123.228.14/resolutions?limit=10"
+            },
+            "meta": {
+                "cursor": "CloKEQoEZGF0ZRIJCIW6qpGCu-QCEkFqEXN-dmlydXN0b3RhbGNsb3VkciwLEgpSZXNvbHV0aW9uIhwxOTUuMTIzLjIyOC4xNHBsYW5ldHNleC5jbHViDBgAIAE="
+            }
+        }
+    http_version: null
+  recorded_at: Sat, 14 Mar 2020 23:56:59 GMT
+recorded_with: VCR 5.1.0
