@@ -47,375 +47,138 @@ $ ukemi help looup
 Usage:
   ukemi lookup [IP|DOMAIN]
 
-Lookup passive DNS services
+Options:
+  [--order-by=ORDER_BY]  # Ordering of the passve DNS resolutions (last_seen or first_seen)
+                         # Default: -last_seen
+
+Lookup passive DNS servicess
 ```
 
 ```bash
-$ ukemi lookup circl.lu
+$ ukemi lookup example.com
 {
-  "149.13.33.14": [
-    {
-      "firtst_seen": "2016-10-07",
-      "last_seen": "2018-10-26",
-      "source": "CIRCL"
-    },
-    {
-      "firtst_seen": "2017-05-26",
-      "last_seen": "2020-03-15",
-      "source": "SecurityTrails"
-    },
-    {
-      "firtst_seen": "2019-12-04",
-      "last_seen": "2019-12-04",
-      "source": "VirusTotal"
-    }
-  ],
-  "149.13.33.4": [
-    {
-      "firtst_seen": "2011-03-08",
-      "last_seen": "2012-02-13",
-      "source": "CIRCL"
-    },
-    {
-      "firtst_seen": "2013-07-30",
-      "last_seen": "2013-07-30",
-      "source": "VirusTotal"
-    }
-  ],
-  "194.154.205.24": [
-    {
-      "firtst_seen": "2011-03-03",
-      "last_seen": "2011-03-03",
-      "source": "CIRCL"
-    }
-  ]
+  "93.184.216.34": {
+    "first_seen": "2016-03-01",
+    "last_seen": "2020-03-16",
+    "sources": [
+      {
+        "first_seen": "2016-10-07",
+        "last_seen": "2018-10-30",
+        "source": "CIRCL"
+      },
+      {
+        "first_seen": "2016-03-01",
+        "last_seen": "2020-03-16",
+        "source": "SecurityTrails"
+      },
+      {
+        "first_seen": "2020-03-03",
+        "last_seen": "2020-03-03",
+        "source": "VirusTotal"
+      }
+    ]
+  },
+  ...
 }
 
 $ ukemi lookup 195.123.226.243
 {
-  "liankt.club": [
-    {
-      "firtst_seen": "2020-02-15",
-      "last_seen": "2020-03-13",
-      "source": "PassiveTotal"
-    },
-    {
-      "firtst_seen": "2020-02-16",
-      "last_seen": "2020-02-16",
-      "source": "VirusTotal"
-    }
-  ],
-  "weidt.club": [
-    {
-      "firtst_seen": "2020-03-12",
-      "last_seen": "2020-03-12",
-      "source": "PassiveTotal"
-    }
-  ],
-  "jikt.club": [
-    {
-      "firtst_seen": "2020-03-04",
-      "last_seen": "2020-03-12",
-      "source": "PassiveTotal"
-    },
-    {
-      "firtst_seen": "2020-03-05",
-      "last_seen": "2020-03-05",
-      "source": "VirusTotal"
-    }
-  ],
-  "biesi.club": [
-    {
-      "firtst_seen": "2020-02-15",
-      "last_seen": "2020-03-12",
-      "source": "PassiveTotal"
-    },
-    {
-      "firtst_seen": "2020-02-20",
-      "last_seen": "2020-02-20",
-      "source": "VirusTotal"
-    }
-  ],
-  "kaikt.club": [
-    {
-      "firtst_seen": "2020-02-15",
-      "last_seen": "2020-03-12",
-      "source": "PassiveTotal"
-    },
-    {
-      "firtst_seen": "2020-02-21",
-      "last_seen": "2020-02-21",
-      "source": "VirusTotal"
-    }
-  ],
-  "zhaokt.club": [
-    {
-      "firtst_seen": "2020-02-15",
-      "last_seen": "2020-03-11",
-      "source": "PassiveTotal"
-    },
-    {
-      "firtst_seen": "2020-02-18",
-      "last_seen": "2020-02-18",
-      "source": "VirusTotal"
-    }
-  ],
-  "yangdt.club": [
-    {
-      "firtst_seen": "2020-02-26",
-      "last_seen": "2020-03-10",
-      "source": "PassiveTotal"
-    },
-    {
-      "firtst_seen": "2020-02-27",
-      "last_seen": "2020-02-27",
-      "source": "VirusTotal"
-    }
-  ],
-  "jinkt.club": [
-    {
-      "firtst_seen": "2020-02-21",
-      "last_seen": "2020-03-10",
-      "source": "PassiveTotal"
-    },
-    {
-      "firtst_seen": "2020-02-22",
-      "last_seen": "2020-02-22",
-      "source": "VirusTotal"
-    }
-  ],
-  "taokt.club": [
-    {
-      "firtst_seen": "2020-03-10",
-      "last_seen": "2020-03-10",
-      "source": "PassiveTotal"
-    }
-  ],
-  "xinkt.club": [
-    {
-      "firtst_seen": "2020-02-17",
-      "last_seen": "2020-03-09",
-      "source": "PassiveTotal"
-    },
-    {
-      "firtst_seen": "2020-02-19",
-      "last_seen": "2020-02-19",
-      "source": "VirusTotal"
-    }
-  ],
-  "mail.realty-advertising.ru": [
-    {
-      "firtst_seen": "2019-11-08",
-      "last_seen": "2020-03-09",
-      "source": "PassiveTotal"
-    }
-  ],
-  "realty-advertising.ru": [
-    {
-      "firtst_seen": "2019-11-08",
-      "last_seen": "2020-03-06",
-      "source": "PassiveTotal"
-    }
-  ],
-  "ns1.realty-advertising.ru": [
-    {
-      "firtst_seen": "2019-12-02",
-      "last_seen": "2020-03-04",
-      "source": "PassiveTotal"
-    }
-  ],
-  "ns2.realty-advertising.ru": [
-    {
-      "firtst_seen": "2019-12-04",
-      "last_seen": "2020-03-04",
-      "source": "PassiveTotal"
-    }
-  ],
-  "xiankt.club": [
-    {
-      "firtst_seen": "2020-02-15",
-      "last_seen": "2020-03-03",
-      "source": "PassiveTotal"
-    },
-    {
-      "firtst_seen": "2020-02-16",
-      "last_seen": "2020-02-16",
-      "source": "VirusTotal"
-    }
-  ],
-  "nittsu-si.com": [
-    {
-      "firtst_seen": "2020-02-15",
-      "last_seen": "2020-03-03",
-      "source": "PassiveTotal"
-    },
-    {
-      "firtst_seen": "2020-02-21",
-      "last_seen": "2020-02-21",
-      "source": "VirusTotal"
-    }
-  ],
-  "mailer.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-23",
-      "last_seen": "2020-02-23",
-      "source": "PassiveTotal"
-    }
-  ],
-  "mail7.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-23",
-      "last_seen": "2020-02-23",
-      "source": "PassiveTotal"
-    }
-  ],
-  "zimbra.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-23",
-      "last_seen": "2020-02-23",
-      "source": "PassiveTotal"
-    }
-  ],
-  "relay2.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-23",
-      "last_seen": "2020-02-23",
-      "source": "PassiveTotal"
-    }
-  ],
-  "sniper.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-22",
-      "last_seen": "2020-02-22",
-      "source": "PassiveTotal"
-    }
-  ],
-  "mailx.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-22",
-      "last_seen": "2020-02-22",
-      "source": "PassiveTotal"
-    }
-  ],
-  "send.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-22",
-      "last_seen": "2020-02-22",
-      "source": "PassiveTotal"
-    }
-  ],
-  "mta.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-22",
-      "last_seen": "2020-02-22",
-      "source": "PassiveTotal"
-    }
-  ],
-  "home.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-22",
-      "last_seen": "2020-02-22",
-      "source": "PassiveTotal"
-    }
-  ],
-  "pbrand.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-22",
-      "last_seen": "2020-02-22",
-      "source": "PassiveTotal"
-    }
-  ],
-  "smtpauth.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-22",
-      "last_seen": "2020-02-22",
-      "source": "PassiveTotal"
-    }
-  ],
-  "gate.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-21",
-      "last_seen": "2020-02-21",
-      "source": "PassiveTotal"
-    }
-  ],
-  "mx02.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-21",
-      "last_seen": "2020-02-21",
-      "source": "PassiveTotal"
-    }
-  ],
-  "outmail.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-21",
-      "last_seen": "2020-02-21",
-      "source": "PassiveTotal"
-    }
-  ],
-  "exchange.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-21",
-      "last_seen": "2020-02-21",
-      "source": "PassiveTotal"
-    }
-  ],
-  "ms.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-21",
-      "last_seen": "2020-02-21",
-      "source": "PassiveTotal"
-    }
-  ],
-  "owa.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-20",
-      "last_seen": "2020-02-20",
-      "source": "PassiveTotal"
-    }
-  ],
-  "mail8.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-02-20",
-      "last_seen": "2020-02-20",
-      "source": "PassiveTotal"
-    }
-  ],
-  "mta-sts.realty-advertising.ru": [
-    {
-      "firtst_seen": "2019-11-11",
-      "last_seen": "2020-02-08",
-      "source": "PassiveTotal"
-    }
-  ],
-  "mail02.realty-advertising.ru": [
-    {
-      "firtst_seen": "2020-01-18",
-      "last_seen": "2020-01-18",
-      "source": "PassiveTotal"
-    }
-  ],
-  "www.realty-advertising.ru": [
-    {
-      "firtst_seen": "2019-11-08",
-      "last_seen": "2019-11-12",
-      "source": "PassiveTotal"
-    }
-  ],
-  "ln-048.rd-00003024.id-11744955.v0.tun.vpnoverdns.com": [
-    {
-      "firtst_seen": "2017-04-06",
-      "last_seen": "2017-04-06",
-      "source": "PassiveTotal"
-    }
-  ],
-  "mnen6k7g.info": [
-    {
-      "firtst_seen": "2010-10-28",
-      "last_seen": "2010-10-28",
-      "source": "PassiveTotal"
-    }
-  ]
+  "example.org": {
+    "first_seen": "2011-04-11",
+    "last_seen": "2020-03-16",
+    "sources": [
+      {
+        "first_seen": "2011-04-11",
+        "last_seen": "2011-04-11",
+        "source": "CIRCL"
+      },
+      {
+        "first_seen": "2016-10-09",
+        "last_seen": "2018-10-28",
+        "source": "CIRCL"
+      },
+      {
+        "first_seen": "2014-12-09",
+        "last_seen": "2020-03-16",
+        "source": "PassiveTotal"
+      },
+      {
+        "first_seen": null,
+        "last_seen": null,
+        "source": "SecurityTrails"
+      }
+    ]
+  },
+  ...
+}
+
+# You can specify the order of resolutions
+
+# Order by last_seen DESC
+$ ukemi lookup example.com --order-by -last_seen
+
+# Order by last_seen ASC
+$ ukemi lookup example.com --order-by last_seen
+
+# Order by first_seen DESC
+$ ukemi lookup example.com --order-by -first_seen
+
+# Order by first_seen ASC
+$ ukemi lookup example.com --order-by first_seen
+```
+
+### Using with jq
+
+[jq](https://stedolan.github.io/jq/)'s powerful processor helps to interact with the output.
+
+```bash
+# List up resolutions only
+$ ukemi lookup example.com | jq "keys"
+[
+  "192.0.32.10",
+  "192.0.43.10",
+  "208.77.188.166",
+  "209.67.208.202",
+  "221.121.159.162",
+  "93.184.216.119",
+  "93.184.216.34"
+]
+
+# List up the first 2 objects
+$ ukemi lookup example.com  | jq "to_entries | .[:2] | from_entries"
+{
+  "93.184.216.34": {
+    "first_seen": "2016-03-01",
+    "last_seen": "2020-03-16",
+    "sources": [
+      {
+        "first_seen": "2016-10-07",
+        "last_seen": "2018-10-30",
+        "source": "CIRCL"
+      },
+      {
+        "first_seen": "2016-03-01",
+        "last_seen": "2020-03-16",
+        "source": "SecurityTrails"
+      },
+      {
+        "first_seen": "2020-03-03",
+        "last_seen": "2020-03-03",
+        "source": "VirusTotal"
+      }
+    ]
+  },
+  "221.121.159.162": {
+    "first_seen": "2019-11-04",
+    "last_seen": "2019-11-04",
+    "sources": [
+      {
+        "first_seen": "2019-11-04",
+        "last_seen": "2019-11-04",
+        "source": "VirusTotal"
+      }
+    ]
+  }
 }
 ```
 
