@@ -33,23 +33,24 @@ module Ukemi
       def lookup_by_domain(data)
         result = api.history.get_all_dns_history(data, type: "a")
         records = result.dig("records") || []
-        records.map do |record|
-          values = record.dig("values") || []
-          values.map do |value|
-            Record.new(
-              data: value.dig("ip"),
-              first_seen: record.dig("first_seen"),
-              last_seen: record.dig("last_seen"),
-              source: name
-            )
-          end
-        end.flatten
-      end
 
-      def extract_attributes(response)
-        data = response.dig("data") || []
-        data.map do |item|
-          item.dig("attributes") || []
+        memo = Hash.new { |h, k| h[k] = [] }
+        records.each do |record|
+          values = record.dig("values") || []
+          values.each do |value|
+            ip = value.dig("ip")
+            memo[ip] << record.dig("first_seen")
+            memo[ip] << record.dig("last_seen")
+          end
+        end
+
+        memo.keys.map do |ip|
+          Record.new(
+            data: ip,
+            first_seen: memo[ip].min,
+            last_seen: memo[ip].max,
+            source: name
+          )
         end
       end
     end
