@@ -2,6 +2,7 @@
 
 require "parallel"
 require "time"
+require "date"
 
 module Ukemi
   class Moderator
@@ -17,27 +18,49 @@ module Ukemi
         end
       end.flatten.compact
 
+      format records
+    end
+
+    def format(records)
       memo = Hash.new { |h, k| h[k] = [] }
+
       records.each do |record|
         memo[record.data] << {
-          firtst_seen: record.first_seen,
+          first_seen: record.first_seen,
           last_seen: record.last_seen,
           source: record.source,
         }
       end
-
-      memo.sort_by do |_key, array|
-        last_seens = array.map do |record|
-          parse_to_unixtime record.dig(:last_seen)
-        end
-        -last_seens.max
+      # Merge first seen last seen and make the sources a list.
+      formatted = memo.map do |key, sources|
+        first_seens = sources.map { |record| convert_to_unixtime record.dig(:first_seen) }.compact
+        last_seens = sources.map { |record| convert_to_unixtime record.dig(:last_seen) }.compact
+        [
+          key,
+          {
+            first_seen: convert_to_date(first_seens.min),
+            last_seen: convert_to_date(last_seens.max),
+            sources: sources
+          }
+        ]
+      end.to_h
+      # Sort by last_seen (desc)
+      formatted.sort_by do |_key, hash|
+        last_seen = hash.dig(:last_seen)
+        last_seen ? -convert_to_unixtime(last_seen) : -1
       end.to_h
     end
 
-    def parse_to_unixtime(date)
-      return -1 unless date
+    def convert_to_unixtime(date)
+      return nil unless date
 
       Time.parse(date).to_i
+    end
+
+    def convert_to_date(time)
+      return nil unless time
+
+      Time.at(time).to_date.to_s
     end
 
     class << self
