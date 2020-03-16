@@ -44,10 +44,17 @@ module Ukemi
           }
         ]
       end.to_h
-      # Sort by last_seen (desc)
+
+      # Sorting
+      ordering_key = Ukemi.configuration.ordering_key.to_sym
+      sort_order = Ukemi.configuration.sort_order
       formatted.sort_by do |_key, hash|
-        last_seen = hash.dig(:last_seen)
-        last_seen ? -convert_to_unixtime(last_seen) : -1
+        value = hash.dig(ordering_key)
+        if sort_order == "DESC"
+          value ? -convert_to_unixtime(value) : -1
+        else
+          value ? convert_to_unixtime(value) : Float::MAX.to_i
+        end
       end.to_h
     end
 
