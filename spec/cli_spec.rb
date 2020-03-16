@@ -33,4 +33,27 @@ RSpec.describe Ukemi::CLI do
       expect(subject.refang("1.1.1(.)1")).to eq("1.1.1.1")
     end
   end
+
+  describe "#set_ordering" do
+    subject { described_class.new }
+
+    after do
+      Ukemi.configure do |config|
+        config.ordering_key = "last_seen"
+        config.sort_order = "DESC"
+      end
+    end
+
+    it do
+      subject.set_ordering("-first_seen")
+      expect(Ukemi.configuration.ordering_key).to eq("first_seen")
+      expect(Ukemi.configuration.sort_order).to eq("DESC")
+    end
+
+    it do
+      subject.set_ordering("first_seen")
+      expect(Ukemi.configuration.ordering_key).to eq("first_seen")
+      expect(Ukemi.configuration.sort_order).to eq("ASC")
+    end
+  end
 end

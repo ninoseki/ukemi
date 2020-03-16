@@ -28,4 +28,6 @@ require "ukemi/services/virustotal"
 
 require "ukemi/moderator"
 
+require "ukemi/configuration"
+
 require "ukemi/cli"
