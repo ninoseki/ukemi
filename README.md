@@ -43,7 +43,7 @@ Commands:
   ukemi help [COMMAND]      # Describe available commands or one specific command
   ukemi lookup [IP|DOMAIN]  # Lookup passive DNS services
 
-$ ukemi help looup
+$ ukemi help lookup
 Usage:
   ukemi lookup [IP|DOMAIN]
 
