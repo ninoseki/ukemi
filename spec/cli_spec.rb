@@ -3,11 +3,6 @@
 RSpec.describe Ukemi::CLI do
   subject { described_class }
 
-  let(:pt_mock) { double("PassiveTotal") }
-  let(:vt_mock) { double("VirusTotal") }
-  let(:st_mock) { double("SecurityTrails") }
-  let(:circl_mock) { double("CIRCL") }
-
   before do
     allow(Ukemi::Moderator).to receive(:lookup).and_return({})
   end
