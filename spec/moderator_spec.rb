@@ -7,6 +7,7 @@ RSpec.describe Ukemi::Moderator do
   let(:vt_mock) { double("VirusTotal") }
   let(:st_mock) { double("SecurityTrails") }
   let(:circl_mock) { double("CIRCL") }
+  let(:dnsdb_mock) { double("DNSDB") }
 
   before do
     allow(pt_mock).to receive(:lookup).and_return(
@@ -32,6 +33,12 @@ RSpec.describe Ukemi::Moderator do
     )
     allow(circl_mock).to receive(:configurated?).and_return(true)
     allow(Ukemi::Services::CIRCL).to receive(:new).and_return(circl_mock)
+
+    allow(dnsdb_mock).to receive(:lookup).and_return(
+      []
+    )
+    allow(dnsdb_mock).to receive(:configurated?).and_return(true)
+    allow(Ukemi::Services::DNSDB).to receive(:new).and_return(dnsdb_mock)
   end
 
   describe "#lookup" do

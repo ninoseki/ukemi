@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dnsdb.info/lookup/rrset/name/circl.lu/A
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Host:
+      - api.dnsdb.info
+      X-Api-Key:
+      - "<DNSDB_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3
+      Date:
+      - Fri, 20 Mar 2020 07:52:52 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '454'
+      X-Ratelimit-Reset:
+      - n/a
+      X-Ratelimit-Expires:
+      - '1587230628'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-RateLimit-Expires
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Accept, Cache-Control, Pragma, Origin, Authorization, Cookie, Content-Type,
+        X-API-Key
+      Strict-Transport-Security:
+      - max-age=15768000
+      Expires:
+      - "-1"
+      Cache-Control:
+      - private, max-age=0
+    body:
+      encoding: ASCII-8BIT
+      string: '{"count":25171,"time_first":1575144527,"time_last":1584659159,"rrname":"circl.lu.","rrtype":"A","bailiwick":"circl.lu.","rdata":["149.13.33.14"]}
+
+        '
+    http_version: null
+  recorded_at: Fri, 20 Mar 2020 07:52:52 GMT
+recorded_with: VCR 5.1.0

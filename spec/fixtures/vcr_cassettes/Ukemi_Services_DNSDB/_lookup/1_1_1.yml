@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.dnsdb.info/lookup/rdata/ip/149.13.33.14
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Ruby
+      Host:
+      - api.dnsdb.info
+      X-Api-Key:
+      - "<DNSDB_API_KEY>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3
+      Date:
+      - Fri, 20 Mar 2020 07:52:51 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '500'
+      X-Ratelimit-Remaining:
+      - '455'
+      X-Ratelimit-Reset:
+      - n/a
+      X-Ratelimit-Expires:
+      - '1587230628'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-RateLimit-Expires
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Accept, Cache-Control, Pragma, Origin, Authorization, Cookie, Content-Type,
+        X-API-Key
+      Strict-Transport-Security:
+      - max-age=15768000
+      Expires:
+      - "-1"
+      Cache-Control:
+      - private, max-age=0
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {"count":33,"time_first":1575364260,"time_last":1584432956,"rrname":"attack-community.eu.","rrtype":"A","rdata":"149.13.33.14"}
+        {"count":25171,"time_first":1575144527,"time_last":1584659159,"rrname":"circl.lu.","rrtype":"A","rdata":"149.13.33.14"}
+        {"count":8197,"time_first":1575147901,"time_last":1584658770,"rrname":"cpab.circl.lu.","rrtype":"A","rdata":"149.13.33.14"}
+        {"count":65,"time_first":1575334163,"time_last":1584462972,"rrname":"circle.lu.","rrtype":"A","rdata":"149.13.33.14"}
+        {"count":7,"time_first":1575956745,"time_last":1583272649,"rrname":"www.circle.lu.","rrtype":"A","rdata":"149.13.33.14"}
+        {"count":5,"time_first":1577839503,"time_last":1581264244,"rrname":"antibot.lu.","rrtype":"A","rdata":"149.13.33.14"}
+        {"count":43,"time_first":1576720535,"time_last":1584436438,"rrname":"botfree.lu.","rrtype":"A","rdata":"149.13.33.14"}
+        {"count":2,"time_first":1577354433,"time_last":1577354433,"rrname":"www.botfree.lu.","rrtype":"A","rdata":"149.13.33.14"}
+        {"count":2,"time_first":1581269902,"time_last":1581269902,"rrname":"botfrei.lu.","rrtype":"A","rdata":"149.13.33.14"}
+        {"count":98,"time_first":1575248828,"time_last":1584639986,"rrname":"x-isac.com.","rrtype":"A","rdata":"149.13.33.14"}
+        {"count":77,"time_first":1575307886,"time_last":1584129103,"rrname":"attack-community.com.","rrtype":"A","rdata":"149.13.33.14"}
+        {"count":99,"time_first":1575330768,"time_last":1584488472,"rrname":"x-isac.net.","rrtype":"A","rdata":"149.13.33.14"}
+        {"count":100,"time_first":1575276924,"time_last":1584607253,"rrname":"attack-community.net.","rrtype":"A","rdata":"149.13.33.14"}
+        {"count":246,"time_first":1575263762,"time_last":1584643374,"rrname":"open-source-security-software.net.","rrtype":"A","rdata":"149.13.33.14"}
+        {"count":80,"time_first":1575702840,"time_last":1584350747,"rrname":"x-isac.org.","rrtype":"A","rdata":"149.13.33.14"}
+        {"count":142,"time_first":1575343529,"time_last":1584351817,"rrname":"d4-project.org.","rrtype":"A","rdata":"149.13.33.14"}
+        {"count":102,"time_first":1575230236,"time_last":1584607253,"rrname":"attack-community.org.","rrtype":"A","rdata":"149.13.33.14"}
+    http_version: null
+  recorded_at: Fri, 20 Mar 2020 07:52:51 GMT
+recorded_with: VCR 5.1.0
