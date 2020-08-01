@@ -11,6 +11,7 @@ It supports the following services.
 
 - [CIRCL passive DNS](https://www.circl.lu/services/passive-dns/)
 - [DNSDB](https://api.dnsdb.info/)
+- [OTX](https://otx.alienvault.com)
 - [PassiveTotal](https://community.riskiq.com/)
 - [SecurityTrails](https://securitytrails.com/)
 - [VirusTotal](http://virustotal.com)
@@ -32,6 +33,7 @@ Configuration is done via environment variables.
 | CIRCL_PASSIVE_PASSWORD | CIRCL passive DNS password |
 | CIRCL_PASSIVE_USERNAME | CIRCL passive DNS username |
 | DNSDB_API_KEY          | DNSDB API key              |
+| OTX_API_KEY            | OTX API key                |
 | PASSIVETOTAL_API_KEY   | PassiveTotal API key       |
 | PASSIVETOTAL_USERNAME  | PassiveTotal username      |
 | SECURITYTRAILS_API_KEY | SecurityTrails API key     |
