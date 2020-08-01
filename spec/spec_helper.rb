@@ -38,7 +38,7 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.ignore_localhost = false
 
-  api_keys = %w(VIRUSTOTAL_API_KEY SECURITYTRAILS_API_KEY DNSDB_API_KEY)
+  api_keys = %w(VIRUSTOTAL_API_KEY SECURITYTRAILS_API_KEY DNSDB_API_KEY OTX_API_KEY)
   api_keys.each do |key|
     ENV[key] = "foo bar" unless ENV.key?(key)
     config.filter_sensitive_data("<#{key}>") { ENV[key] }

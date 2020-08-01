@@ -13,7 +13,7 @@ module Ukemi
 
         begin
           service.lookup data
-        rescue ::PassiveTotal::Error, ::VirusTotal::Error, ::SecurityTrails::Error, PassiveCIRCL::Error, DNSDB::Error
+        rescue ::PassiveTotal::Error, ::VirusTotal::Error, ::SecurityTrails::Error, PassiveCIRCL::Error, DNSDB::Error, Faraday::Error
           nil
         end
       end.flatten.compact

@@ -23,6 +23,7 @@ require "ukemi/services/service"
 
 require "ukemi/services/circl"
 require "ukemi/services/dnsdb"
+require "ukemi/services/otx"
 require "ukemi/services/passivetotal"
 require "ukemi/services/securitytrails"
 require "ukemi/services/virustotal"
