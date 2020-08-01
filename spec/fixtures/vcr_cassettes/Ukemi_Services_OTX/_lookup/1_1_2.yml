@@ -1,0 +1,130 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/IPv4/149.13.33.14/passive_dns
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.3
+      X-Otx-Api-Key:
+      - "<OTX_API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '730'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=600
+      Date:
+      - Fri, 31 Jul 2020 12:21:27 GMT
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 1d4623d6171c72e763d2b9de687d6e7a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - NRT57-C4
+      X-Amz-Cf-Id:
+      - t6s1GaCwmo6nx2rkm_bAwEKutUTcFIp2_3wTKfnQUeZErYudhEqyQg==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"passive_dns": [{"flag_url": "assets/images/us.png", "record_type":
+        "A", "last": "2020-06-21T00:01:16+00:00", "flag_title": "United States of
+        America", "address": "149.13.33.14", "indicator_link": "/indicator/domain/d4-project.org",
+        "hostname": "d4-project.org", "asset_type": "domain", "first": "2019-04-14T08:30:30+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2019-03-29T04:59:32+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/hostname/www.circle.lu", "hostname": "www.circle.lu", "asset_type":
+        "hostname", "first": "2019-03-29T04:59:32+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2019-02-18T23:00:00+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.14", "indicator_link": "/indicator/hostname/cve.circl.lu",
+        "hostname": "cve.circl.lu", "asset_type": "hostname", "first": "2019-02-18T23:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2020-07-10T13:16:45+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/domain/circl.lu", "hostname": "circl.lu", "asset_type": "domain",
+        "first": "2019-02-09T23:00:00+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2020-04-21T07:13:18+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.14", "indicator_link": "/indicator/domain/x-isac.org",
+        "hostname": "x-isac.org", "asset_type": "domain", "first": "2018-12-29T23:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2020-06-21T00:02:34+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/domain/open-source-security-software.net", "hostname": "open-source-security-software.net",
+        "asset_type": "domain", "first": "2018-12-25T23:00:00+00:00"}, {"flag_url":
+        "assets/images/us.png", "record_type": "A", "last": "2018-12-25T23:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/hostname/www.open-source-security-software.net", "hostname": "www.open-source-security-software.net",
+        "asset_type": "hostname", "first": "2018-12-25T23:00:00+00:00"}, {"flag_url":
+        "assets/images/us.png", "record_type": "A", "last": "2020-06-07T00:04:20+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/domain/attack-community.org", "hostname": "attack-community.org",
+        "asset_type": "domain", "first": "2018-12-18T23:00:00+00:00"}, {"flag_url":
+        "assets/images/us.png", "record_type": "A", "last": "2018-12-18T23:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/hostname/www.attack-community.org", "hostname": "www.attack-community.org",
+        "asset_type": "hostname", "first": "2018-12-18T23:00:00+00:00"}, {"flag_url":
+        "assets/images/us.png", "record_type": "A", "last": "2018-12-11T23:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/hostname/bgpranking.circl.lu", "hostname": "bgpranking.circl.lu",
+        "asset_type": "hostname", "first": "2018-12-11T23:00:00+00:00"}, {"flag_url":
+        "assets/images/us.png", "record_type": "A", "last": "2020-07-29T08:59:17+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/hostname/cpab.circl.lu", "hostname": "cpab.circl.lu", "asset_type":
+        "hostname", "first": "2018-11-29T23:00:00+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2018-10-27T22:00:00+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.14", "indicator_link": "/indicator/hostname/www.x-isac.org",
+        "hostname": "www.x-isac.org", "asset_type": "hostname", "first": "2018-10-27T22:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2018-10-24T22:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/domain/botfree.lu", "hostname": "botfree.lu", "asset_type": "domain",
+        "first": "2018-10-24T22:00:00+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2018-09-09T22:00:00+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.14", "indicator_link": "/indicator/domain/x-isac.net",
+        "hostname": "x-isac.net", "asset_type": "domain", "first": "2018-09-09T22:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2018-09-06T22:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/domain/attack-community.com", "hostname": "attack-community.com",
+        "asset_type": "domain", "first": "2018-09-06T22:00:00+00:00"}, {"flag_url":
+        "assets/images/us.png", "record_type": "A", "last": "2018-08-10T22:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/domain/x-isac.com", "hostname": "x-isac.com", "asset_type": "domain",
+        "first": "2018-08-10T22:00:00+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2018-08-04T22:00:00+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.14", "indicator_link": "/indicator/hostname/www.circl.lu",
+        "hostname": "www.circl.lu", "asset_type": "hostname", "first": "2018-08-04T22:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2018-07-29T22:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/hostname/search.circl.lu", "hostname": "search.circl.lu", "asset_type":
+        "hostname", "first": "2018-07-29T22:00:00+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2018-06-08T22:00:00+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.14", "indicator_link": "/indicator/domain/circle.lu",
+        "hostname": "circle.lu", "asset_type": "domain", "first": "2018-06-08T22:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2018-01-23T23:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/hostname/services.circl.lu", "hostname": "services.circl.lu",
+        "asset_type": "hostname", "first": "2018-01-23T23:00:00+00:00"}, {"flag_url":
+        "assets/images/us.png", "record_type": "A", "last": "2016-10-06T22:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/domain/cicl.lu", "hostname": "cicl.lu", "asset_type": "domain",
+        "first": "2016-10-06T22:00:00+00:00"}], "count": 21}'
+  recorded_at: Fri, 31 Jul 2020 12:21:28 GMT
+recorded_with: VCR 6.0.0

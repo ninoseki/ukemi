@@ -1,0 +1,220 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://otx.alienvault.com/api/v1/indicators/domain/circl.lu/passive_dns
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.3
+      X-Otx-Api-Key:
+      - "<OTX_API_KEY>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1304'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=600
+      Date:
+      - Fri, 31 Jul 2020 12:03:33 GMT
+      Server:
+      - nginx
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Otx-Active:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 5fff6f32cdc1acd4f4d551ecc9c37409.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - NRT57-C4
+      X-Amz-Cf-Id:
+      - Zlw6tBudnQ7oK_IOhCtJaEgt06JtiOJTACPzrDuc1peTWSyaYflp9w==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"passive_dns": [{"flag_url": "assets/images/us.png", "record_type":
+        "A", "last": "2020-07-13T22:00:15+00:00", "flag_title": "United States of
+        America", "address": "149.13.33.18", "indicator_link": "/indicator/hostname/cped.circl.lu",
+        "hostname": "cped.circl.lu", "asset_type": "hostname", "first": "2020-04-14T13:27:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "NS", "last": "2020-03-11T21:04:22+00:00",
+        "flag_title": "United States of America", "address": "ns1.eurodns.com", "indicator_link":
+        "/indicator/domain/circl.lu", "hostname": "circl.lu", "asset_type": "domain",
+        "first": "2020-02-25T08:20:07+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "NS", "last": "2020-03-11T21:04:22+00:00", "flag_title": "United
+        States of America", "address": "ns2.eurodns.com", "indicator_link": "/indicator/domain/circl.lu",
+        "hostname": "circl.lu", "asset_type": "domain", "first": "2020-02-25T08:20:07+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "NS", "last": "2020-03-11T21:04:22+00:00",
+        "flag_title": "United States of America", "address": "ns3.eurodns.com", "indicator_link":
+        "/indicator/domain/circl.lu", "hostname": "circl.lu", "asset_type": "domain",
+        "first": "2020-02-25T08:20:07+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "NS", "last": "2020-03-11T21:04:22+00:00", "flag_title": "United
+        States of America", "address": "ns4.eurodns.com", "indicator_link": "/indicator/domain/circl.lu",
+        "hostname": "circl.lu", "asset_type": "domain", "first": "2020-02-25T08:20:07+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "SOA", "last": "2020-03-11T21:04:22+00:00",
+        "flag_title": "United States of America", "address": "ns1.eurodns.com", "indicator_link":
+        "/indicator/domain/circl.lu", "hostname": "circl.lu", "asset_type": "domain",
+        "first": "2020-02-25T08:20:07+00:00"}, {"flag_url": "assets/images/de.png",
+        "record_type": "AAAA", "last": "2020-03-23T12:16:18+00:00", "flag_title":
+        "Germany", "address": "2001:978:4200:c::90", "indicator_link": "/indicator/hostname/pgp.circl.lu",
+        "hostname": "pgp.circl.lu", "asset_type": "hostname", "first": "2019-11-24T00:35:16+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "CNAME", "last": "2019-10-14T17:55:01+00:00",
+        "flag_title": "United States of America", "address": "cpab.circl.lu", "indicator_link":
+        "/indicator/hostname/bgpranking-ng.circl.lu", "hostname": "bgpranking-ng.circl.lu",
+        "asset_type": "hostname", "first": "2019-10-14T17:47:33+00:00"}, {"flag_url":
+        "assets/images/de.png", "record_type": "AAAA", "last": "2020-07-23T17:51:02+00:00",
+        "flag_title": "Germany", "address": "2001:978:4200:a::17", "indicator_link":
+        "/indicator/hostname/cpec.circl.lu", "hostname": "cpec.circl.lu", "asset_type":
+        "hostname", "first": "2019-08-28T10:07:17+00:00"}, {"flag_url": "assets/images/de.png",
+        "record_type": "AAAA", "last": "2020-06-21T00:02:34+00:00", "flag_title":
+        "Germany", "address": "2001:978:4200:a::14", "indicator_link": "/indicator/hostname/cpab.circl.lu",
+        "hostname": "cpab.circl.lu", "asset_type": "hostname", "first": "2019-08-06T05:38:03+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "CNAME", "last": "2020-03-18T05:01:32+00:00",
+        "flag_title": "United States of America", "address": "cpab.circl.lu", "indicator_link":
+        "/indicator/hostname/cve.circl.lu", "hostname": "cve.circl.lu", "asset_type":
+        "hostname", "first": "2019-07-29T22:23:25+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2020-07-23T17:51:02+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.17", "indicator_link": "/indicator/hostname/cpec.circl.lu",
+        "hostname": "cpec.circl.lu", "asset_type": "hostname", "first": "2019-06-29T10:53:58+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "CNAME", "last": "2019-12-01T06:33:22+00:00",
+        "flag_title": "United States of America", "address": "cpab.circl.lu", "indicator_link":
+        "/indicator/hostname/bgpranking.circl.lu", "hostname": "bgpranking.circl.lu",
+        "asset_type": "hostname", "first": "2019-06-25T20:10:58+00:00"}, {"flag_url":
+        "assets/images/us.png", "record_type": "CNAME", "last": "2020-05-13T16:28:40+00:00",
+        "flag_title": "United States of America", "address": "cpcb.circl.lu", "indicator_link":
+        "/indicator/hostname/mm.circl.lu", "hostname": "mm.circl.lu", "asset_type":
+        "hostname", "first": "2019-05-27T07:17:29+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2020-05-13T16:28:40+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.13", "indicator_link": "/indicator/hostname/cpcb.circl.lu",
+        "hostname": "cpcb.circl.lu", "asset_type": "hostname", "first": "2019-05-27T07:17:29+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "CNAME", "last": "2019-03-31T13:01:31+00:00",
+        "flag_title": "United States of America", "address": "cpe.circl.lu", "indicator_link":
+        "/indicator/hostname/map.circl.lu", "hostname": "map.circl.lu", "asset_type":
+        "hostname", "first": "2019-03-31T13:01:31+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2019-03-31T13:01:31+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.9", "indicator_link": "/indicator/hostname/cpe.circl.lu",
+        "hostname": "cpe.circl.lu", "asset_type": "hostname", "first": "2019-03-31T13:01:31+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2020-01-13T19:22:51+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.15", "indicator_link":
+        "/indicator/hostname/misppriv.circl.lu", "hostname": "misppriv.circl.lu",
+        "asset_type": "hostname", "first": "2019-03-19T23:32:05+00:00"}, {"flag_url":
+        "assets/images/us.png", "record_type": "CNAME", "last": "2020-05-11T18:41:56+00:00",
+        "flag_title": "United States of America", "address": "cpab.circl.lu", "indicator_link":
+        "/indicator/hostname/www.circl.lu", "hostname": "www.circl.lu", "asset_type":
+        "hostname", "first": "2019-03-07T18:24:31+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "CNAME", "last": "2020-06-25T16:56:37+00:00", "flag_title":
+        "United States of America", "address": "crl.circl.lu", "indicator_link": "/indicator/hostname/lookyloo.circl.lu",
+        "hostname": "lookyloo.circl.lu", "asset_type": "hostname", "first": "2019-03-01T08:57:44+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2020-06-25T16:56:37+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.89", "indicator_link":
+        "/indicator/hostname/crl.circl.lu", "hostname": "crl.circl.lu", "asset_type":
+        "hostname", "first": "2019-03-01T08:57:44+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2019-02-21T23:00:00+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.69", "indicator_link": "/indicator/hostname/pdns.circl.lu",
+        "hostname": "pdns.circl.lu", "asset_type": "hostname", "first": "2019-02-21T23:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2019-02-18T23:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/hostname/cve.circl.lu", "hostname": "cve.circl.lu", "asset_type":
+        "hostname", "first": "2019-02-18T23:00:00+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2019-02-14T23:00:00+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.71", "indicator_link": "/indicator/hostname/crd.circl.lu",
+        "hostname": "crd.circl.lu", "asset_type": "hostname", "first": "2019-02-14T23:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2020-07-10T13:16:45+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/domain/circl.lu", "hostname": "circl.lu", "asset_type": "domain",
+        "first": "2019-02-09T23:00:00+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2019-01-17T23:00:00+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.5", "indicator_link": "/indicator/hostname/cpb.circl.lu",
+        "hostname": "cpb.circl.lu", "asset_type": "hostname", "first": "2019-01-17T23:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2019-01-05T23:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.6", "indicator_link":
+        "/indicator/hostname/cpc.circl.lu", "hostname": "cpc.circl.lu", "asset_type":
+        "hostname", "first": "2019-01-05T23:00:00+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2018-12-24T23:00:00+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.70", "indicator_link": "/indicator/hostname/crc.circl.lu",
+        "hostname": "crc.circl.lu", "asset_type": "hostname", "first": "2018-12-24T23:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2018-12-11T23:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/hostname/bgpranking.circl.lu", "hostname": "bgpranking.circl.lu",
+        "asset_type": "hostname", "first": "2018-12-11T23:00:00+00:00"}, {"flag_url":
+        "assets/images/us.png", "record_type": "A", "last": "2018-12-10T23:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.15", "indicator_link":
+        "/indicator/hostname/cpeb.circl.lu", "hostname": "cpeb.circl.lu", "asset_type":
+        "hostname", "first": "2018-12-10T23:00:00+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2020-07-29T08:59:17+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.14", "indicator_link": "/indicator/hostname/cpab.circl.lu",
+        "hostname": "cpab.circl.lu", "asset_type": "hostname", "first": "2018-11-29T23:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2018-09-29T22:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.68", "indicator_link":
+        "/indicator/hostname/cra.circl.lu", "hostname": "cra.circl.lu", "asset_type":
+        "hostname", "first": "2018-09-29T22:00:00+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2018-09-10T22:00:00+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.9", "indicator_link": "/indicator/hostname/map.circl.lu",
+        "hostname": "map.circl.lu", "asset_type": "hostname", "first": "2018-09-10T22:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2018-09-04T22:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.15", "indicator_link":
+        "/indicator/hostname/misp.circl.lu", "hostname": "misp.circl.lu", "asset_type":
+        "hostname", "first": "2018-09-04T22:00:00+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2018-08-06T22:00:00+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.71", "indicator_link": "/indicator/hostname/bgpranking.circl.lu",
+        "hostname": "bgpranking.circl.lu", "asset_type": "hostname", "first": "2018-08-06T22:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2018-08-04T22:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/hostname/www.circl.lu", "hostname": "www.circl.lu", "asset_type":
+        "hostname", "first": "2018-08-04T22:00:00+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2018-07-29T22:00:00+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.14", "indicator_link": "/indicator/hostname/search.circl.lu",
+        "hostname": "search.circl.lu", "asset_type": "hostname", "first": "2018-07-29T22:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2018-07-24T22:00:00+00:00",
+        "flag_title": "United States of America", "address": "199.46.188.5", "indicator_link":
+        "/indicator/hostname/www.circl.lu", "hostname": "www.circl.lu", "asset_type":
+        "hostname", "first": "2018-07-24T22:00:00+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2020-03-23T12:16:18+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.90", "indicator_link": "/indicator/hostname/pgp.circl.lu",
+        "hostname": "pgp.circl.lu", "asset_type": "hostname", "first": "2018-07-14T22:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2018-01-23T23:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.14", "indicator_link":
+        "/indicator/hostname/services.circl.lu", "hostname": "services.circl.lu",
+        "asset_type": "hostname", "first": "2018-01-23T23:00:00+00:00"}, {"flag_url":
+        "assets/images/us.png", "record_type": "A", "last": "2014-07-06T22:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.9", "indicator_link":
+        "/indicator/hostname/misp.circl.lu", "hostname": "misp.circl.lu", "asset_type":
+        "hostname", "first": "2014-07-06T22:00:00+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2014-02-03T23:00:00+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.4", "indicator_link": "/indicator/hostname/cve.circl.lu",
+        "hostname": "cve.circl.lu", "asset_type": "hostname", "first": "2014-02-03T23:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "CNAME", "last": "2015-02-17T11:48:38+00:00",
+        "flag_title": "United States of America", "address": "cpa.circl.lu", "indicator_link":
+        "/indicator/hostname/www.circl.lu", "hostname": "www.circl.lu", "asset_type":
+        "hostname", "first": "2013-10-16T20:24:25+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2018-06-25T22:00:00+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.4", "indicator_link": "/indicator/hostname/cpa.circl.lu",
+        "hostname": "cpa.circl.lu", "asset_type": "hostname", "first": "2013-10-16T20:24:25+00:00"},
+        {"flag_url": "assets/images/de.png", "record_type": "AAAA", "last": "2015-02-17T11:48:38+00:00",
+        "flag_title": "Germany", "address": "2001:978:4200:a::4", "indicator_link":
+        "/indicator/hostname/cpa.circl.lu", "hostname": "cpa.circl.lu", "asset_type":
+        "hostname", "first": "2013-10-16T20:24:25+00:00"}, {"flag_url": "assets/images/us.png",
+        "record_type": "A", "last": "2013-10-15T22:00:00+00:00", "flag_title": "United
+        States of America", "address": "149.13.33.4", "indicator_link": "/indicator/hostname/www.circl.lu",
+        "hostname": "www.circl.lu", "asset_type": "hostname", "first": "2013-10-15T22:00:00+00:00"},
+        {"flag_url": "assets/images/us.png", "record_type": "A", "last": "2013-07-29T22:00:00+00:00",
+        "flag_title": "United States of America", "address": "149.13.33.4", "indicator_link":
+        "/indicator/domain/circl.lu", "hostname": "circl.lu", "asset_type": "domain",
+        "first": "2013-07-29T22:00:00+00:00"}], "count": 47}'
+  recorded_at: Fri, 31 Jul 2020 12:03:33 GMT
+recorded_with: VCR 6.0.0
