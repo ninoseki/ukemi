@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.9"
   spec.add_development_dependency "vcr", "~> 6.0"
-  spec.add_development_dependency "webmock", "~> 3.8"
+  spec.add_development_dependency "webmock", "~> 3.9"
 
   spec.add_dependency "addressable", "~> 2.7"
   spec.add_dependency "dnsdb", "~> 0.1"
