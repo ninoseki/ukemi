@@ -9,7 +9,7 @@ module Ukemi
       private
 
       def config_keys
-        %w(VIRUSTOTAL_API_KEY)
+        %w[VIRUSTOTAL_API_KEY]
       end
 
       def api
@@ -29,9 +29,9 @@ module Ukemi
       end
 
       def extract_attributes(response)
-        data = response.dig("data") || []
+        data = response["data"] || []
         data.map do |item|
-          item.dig("attributes") || []
+          item["attributes"] || []
         end
       end
 
@@ -39,8 +39,8 @@ module Ukemi
         memo = Hash.new { |h, k| h[k] = [] }
 
         attributes.each do |attribute|
-          data = attribute.dig(key)
-          date = Time.at(attribute.dig("date")).to_date.to_s
+          data = attribute[key]
+          date = Time.at(attribute["date"]).to_date.to_s
           memo[data] << date
         end
 

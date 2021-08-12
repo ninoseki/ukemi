@@ -28,13 +28,13 @@ module Ukemi
         memo[record.data] << {
           first_seen: record.first_seen,
           last_seen: record.last_seen,
-          source: record.source,
+          source: record.source
         }
       end
       # Merge first seen last seen and make the sources a list.
       formatted = memo.map do |key, sources|
-        first_seens = sources.map { |record| convert_to_unixtime record.dig(:first_seen) }.compact
-        last_seens = sources.map { |record| convert_to_unixtime record.dig(:last_seen) }.compact
+        first_seens = sources.filter_map { |record| convert_to_unixtime record[:first_seen] }
+        last_seens = sources.filter_map { |record| convert_to_unixtime record[:last_seen] }
         [
           key,
           {
@@ -49,7 +49,7 @@ module Ukemi
       ordering_key = Ukemi.configuration.ordering_key.to_sym
       sort_order = Ukemi.configuration.sort_order
       formatted.sort_by do |_key, hash|
-        value = hash.dig(ordering_key)
+        value = hash[ordering_key]
         if sort_order == "DESC"
           value ? -convert_to_unixtime(value) : -1
         else
