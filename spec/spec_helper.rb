@@ -4,16 +4,24 @@ require "bundler/setup"
 
 require "base64"
 require "vcr"
+require "digest"
 
 require "simplecov"
 require "coveralls"
+
 SimpleCov.formatter = Coveralls::SimpleCov::Formatter
 SimpleCov.start do
   add_filter "/spec"
 end
+
 Coveralls.wear!
 
 require "ukemi"
+
+def ci_env?
+  # CI=true and TRAVIS=true in Travis CI
+  ENV["CI"] || ENV["TRAVIS"]
+end
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -38,9 +46,20 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.ignore_localhost = false
 
-  api_keys = %w(VIRUSTOTAL_API_KEY SECURITYTRAILS_API_KEY DNSDB_API_KEY OTX_API_KEY)
+  api_keys = %w[
+    VIRUSTOTAL_API_KEY
+    SECURITYTRAILS_API_KEY
+    DNSDB_API_KEY
+    OTX_API_KEY
+    CIRCL_PASSIVE_USERNAME
+    CIRCL_PASSIVE_PASSWORD
+    PASSIVETOTAL_USERNAME
+    PASSIVETOTAL_API_KEY
+  ]
+
   api_keys.each do |key|
-    ENV[key] = "foo bar" unless ENV.key?(key)
+    ENV[key] = Digest::MD5.hexdigest(key) if ci_env? || !ENV.key?(key)
+
     config.filter_sensitive_data("<#{key}>") { ENV[key] }
   end
 
@@ -48,6 +67,7 @@ VCR.configure do |config|
   config.filter_sensitive_data("<CIRCL_AUTH>") {
     authorization_field ENV["CIRCL_PASSIVE_USERNAME"] || "foo", ENV["CIRCL_PASSIVE_PASSWORD"] || "bar"
   }
+
   # PassiveTotal
   config.filter_sensitive_data("<PASSIVETOTAL_AUTH>") {
     authorization_field ENV["PASSIVETOTAL_USERNAME"] || "foo", ENV["PASSIVETOTAL_API_KEY"] || "bar"
