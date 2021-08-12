@@ -12,12 +12,12 @@ module Ukemi
       end
 
       def config_keys
-        %w(PASSIVETOTAL_USERNAME PASSIVETOTAL_API_KEY)
+        %w[PASSIVETOTAL_USERNAME PASSIVETOTAL_API_KEY]
       end
 
       def lookup_by_ip(data)
         res = api.dns.passive(data)
-        results = res.dig("results") || []
+        results = res["results"] || []
         convert_to_records results
       end
 
@@ -27,9 +27,9 @@ module Ukemi
 
       def convert_to_records(results)
         results.map do |result|
-          data = result.dig("resolve")
-          first_seen = result.dig("firstSeen").to_s.split.first
-          last_seen = result.dig("lastSeen").to_s.split.first
+          data = result["resolve"]
+          first_seen = result["firstSeen"].to_s.split.first
+          last_seen = result["lastSeen"].to_s.split.first
           Record.new(
             data: data,
             first_seen: first_seen,

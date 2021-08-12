@@ -2,8 +2,7 @@
 
 module Ukemi
   class Configuration
-    attr_accessor :ordering_key
-    attr_accessor :sort_order
+    attr_accessor :ordering_key, :sort_order
 
     def initialize
       @ordering_key = "last_seen"

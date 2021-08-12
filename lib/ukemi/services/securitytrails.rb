@@ -9,7 +9,7 @@ module Ukemi
       private
 
       def config_keys
-        %w(SECURITYTRAILS_API_KEY)
+        %w[SECURITYTRAILS_API_KEY]
       end
 
       def api
@@ -17,9 +17,9 @@ module Ukemi
       end
 
       def lookup_by_ip(data)
-        result = api.domains.search( filter: { ipv4: data })
-        records = result.dig("records") || []
-        hostnames = records.map { |record| record.dig("hostname") }
+        result = api.domains.search(filter: { ipv4: data })
+        records = result["records"] || []
+        hostnames = records.map { |record| record["hostname"] }
         hostnames.map do |hostname|
           Record.new(
             data: hostname,
@@ -32,15 +32,15 @@ module Ukemi
 
       def lookup_by_domain(data)
         result = api.history.get_all_dns_history(data, type: "a")
-        records = result.dig("records") || []
+        records = result["records"] || []
 
         memo = Hash.new { |h, k| h[k] = [] }
         records.each do |record|
-          values = record.dig("values") || []
+          values = record["values"] || []
           values.each do |value|
-            ip = value.dig("ip")
-            memo[ip] << record.dig("first_seen")
-            memo[ip] << record.dig("last_seen")
+            ip = value["ip"]
+            memo[ip] << record["first_seen"]
+            memo[ip] << record["last_seen"]
           end
         end
 

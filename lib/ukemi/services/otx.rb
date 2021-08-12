@@ -9,7 +9,7 @@ module Ukemi
       private
 
       def config_keys
-        %w(OTX_API_KEY)
+        %w[OTX_API_KEY]
       end
 
       def api_key
@@ -31,8 +31,8 @@ module Ukemi
           next if record.record_type != "A"
 
           domain = record.hostname
-          memo[domain] <<  Date.parse(record.last).to_s
-          memo[domain] <<  Date.parse(record.first).to_s
+          memo[domain] << Date.parse(record.last).to_s
+          memo[domain] << Date.parse(record.first).to_s
         end
 
         memo.keys.map do |domain|
@@ -54,8 +54,8 @@ module Ukemi
           next if record.hostname != data
 
           ip = record.address
-          memo[ip] <<  Date.parse(record.last).to_s
-          memo[ip] <<  Date.parse(record.first).to_s
+          memo[ip] << Date.parse(record.last).to_s
+          memo[ip] << Date.parse(record.first).to_s
         end
 
         memo.keys.map do |ip|

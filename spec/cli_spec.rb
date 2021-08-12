@@ -9,7 +9,7 @@ RSpec.describe Ukemi::CLI do
 
   describe "#lookup" do
     it do
-      expect { subject.start(%w(lookup 1.1.1.1)) }.to output.to_stdout
+      expect { subject.start(%w[lookup 1.1.1.1]) }.to output.to_stdout
     end
   end
 
