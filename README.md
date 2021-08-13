@@ -1,7 +1,7 @@
 # ukemi
 
 [![Gem Version](https://badge.fury.io/rb/ukemi.svg)](https://badge.fury.io/rb/ukemi)
-[![Build Status](https://travis-ci.com/ninoseki/ukemi.svg?branch=master)](https://travis-ci.com/ninoseki/ukemi)
+[![Ruby CI](https://github.com/ninoseki/ukemi/actions/workflows/test.yaml/badge.svg)](https://github.com/ninoseki/ukemi/actions/workflows/test.yaml)
 [![Coverage Status](https://coveralls.io/repos/github/ninoseki/ukemi/badge.svg?branch=master)](https://coveralls.io/github/ninoseki/ukemi?branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/ninoseki/ukemi/badge)](https://www.codefactor.io/repository/github/ninoseki/ukemi)
 
@@ -17,6 +17,10 @@ It supports the following services.
 - [VirusTotal](http://virustotal.com)
 
 It outputs passive DNS resolutions as JSON.
+
+## Requirements
+
+- Ruby 2.7+ or Ruby 3.x
 
 ## Installation
 
@@ -115,6 +119,10 @@ $ ukemi lookup 195.123.226.243
   },
   ...
 }
+
+# or you scan skip "lookup"
+$ ukemi example.com
+$ ukemi 195.123.226.243
 
 # You can specify the order of resolutions
 
