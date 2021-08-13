@@ -15,6 +15,8 @@ module Ukemi
       puts JSON.pretty_generate(result)
     end
 
+    default_command :lookup
+
     no_commands do
       def refang(data)
         data.gsub("[.]", ".").gsub("(.)", ".")
