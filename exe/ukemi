@@ -5,4 +5,6 @@ $LOAD_PATH.unshift("#{__dir__}/../lib")
 
 require "ukemi"
 
-Ukemi::CLI.start
+ARGV.unshift(Ukemi::CLI.default_task) unless Ukemi::CLI.all_tasks.key?(ARGV[0])
+
+Ukemi::CLI.start(ARGV)
