@@ -5,7 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/ninoseki/ukemi/badge.svg?branch=master)](https://coveralls.io/github/ninoseki/ukemi?branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/ninoseki/ukemi/badge)](https://www.codefactor.io/repository/github/ninoseki/ukemi)
 
-Ukemi is a CIL tool for querying passive DNS services.
+Ukemi is a CLI tool for querying passive DNS services.
 
 It supports the following services.
 
